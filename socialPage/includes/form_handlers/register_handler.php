@@ -42,7 +42,7 @@ if(isset($_POST['register_button'])){
 
     $date = date("Y-m-d"); //Current date
 
-    if ($em = $em2) {
+    if ($em == $em2) {
         //Check if email is in valid format
         if(filter_var($em, FILTER_VALIDATE_EMAIL)){
 
@@ -56,15 +56,15 @@ if(isset($_POST['register_button'])){
            // echo "Error: " . mysqli_error($con);
 
             if ($num_rows > 0) {
-                array_push($error_array, "Email alredy in use<br>");
+                array_push($error_array, "Email alredy in use.<br>");
             }
 
         }else{
-            array_push($error_array, "Invalid email format<br>");
+            array_push($error_array, "Invalid email format.<br>");
         }
     }
     else {
-        array_push($error_array, "Emails don't match<br>");
+        array_push($error_array, "Email don't match.<br>");
     }
 
 
