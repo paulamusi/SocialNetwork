@@ -52,9 +52,9 @@ require 'includes/form_handlers/register_handler.php'
             }
              ?>"required>
             <br>
-            <?php if(in_array("E-mail already in use.<br>", $error_array)) echo "E-mail already in use.<br>";
-            else if(in_array("Invalid e-mail format.<br>", $error_array)) echo "Invalid e-mail format.<br>";
-            else if(in_array("E-mails don't match.<br>", $error_array)) echo "E-mails don't match.<br>"; ?>
+            <?php if(in_array("Email already in use.<br>", $error_array)) echo "Email already in use.<br>";
+            else if(in_array("Invalid email format.<br>", $error_array)) echo "Invalid email format.<br>";
+            else if(in_array("Emails don't match.<br>", $error_array)) echo "Emails don't match.<br>"; ?>
 
             <input type="password" name="reg_password" placeholder="Password" required>
             <br>
